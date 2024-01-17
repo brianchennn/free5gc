@@ -1,5 +1,5 @@
 info:
-  version: 1.0.2
+  version: 1.0.0
   description: UDSF initial local configuration
 
 configuration:
@@ -11,6 +11,9 @@ configuration:
     tls: # the local path of TLS key
       pem: cert/udsf.pem # UDSF TLS Certificate
       key: cert/udsf.key # UDSF TLS Private key
+  serviceNameList: # the SBI services provided by this UDSF, refer to TS 29.598
+    - nudsf-dr # Nudsf_DataRepository service
+    - nudsf-timer # Nudsf_Timer service
   mongodb:
     name: free5gc # Database name in MongoDB
     url: mongodb://localhost:27017 # URL of MongoDB
