@@ -5,18 +5,15 @@ info:
 configuration:
   sbi: # Service-based interface information
     scheme: http # the protocol for sbi (http or https)
-    registerIPv4: 127.0.0.98 # IP used to register to NRF
-    bindingIPv4: 127.0.0.98  # IP used to bind the service
-    port: 8000 # port used to bind the service
+    registerIPv4: 10.10.0.83 # IP used to register to NRF
+    bindingIPv4: 10.10.0.83  # IP used to bind the service
+    port: 8001 # port used to bind the service
     tls: # the local path of TLS key
       pem: cert/udsf.pem # UDSF TLS Certificate
       key: cert/udsf.key # UDSF TLS Private key
   serviceNameList: # the SBI services provided by this UDSF, refer to TS 29.598
     - nudsf-dr # Nudsf_DataRepository service
     - nudsf-timer # Nudsf_Timer service
-  mongodb:
-    name: free5gc # Database name in MongoDB
-    url: mongodb://localhost:27017 # URL of MongoDB
   nrfUri: http://127.0.0.10:8000 # a valid URI of NRF
   nrfCertPem: cert/nrf.pem # NRF Certificate
 
