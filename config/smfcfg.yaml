@@ -6,9 +6,9 @@ configuration:
   smfName: SMF # the name of this SMF
   sbi: # Service-based interface information
     scheme: http # the protocol for sbi (http or https)
-    registerIPv4: 127.0.0.2 # IP used to register to NRF
-    bindingIPv4: 127.0.0.2 # IP used to bind the service
-    port: 8000 # Port used to bind the service
+    registerIPv4: 10.10.0.83 # IP used to register to NRF
+    bindingIPv4: 10.10.0.83 # IP used to bind the service
+    port: 8006 # Port used to bind the service
     tls: # the local path of TLS key
       key: cert/smf.key # SMF TLS Certificate
       pem: cert/smf.pem # SMF TLS Private key
@@ -72,7 +72,7 @@ configuration:
         interfaces: # Interface list for this UPF
           - interfaceType: N3 # the type of the interface (N3 or N9)
             endpoints: # the IP address of this N3/N9 interface on this UPF
-              - 127.0.0.8
+              - 10.10.0.83
             networkInstances: # Data Network Name (DNN)
               - internet
     links: # the topology graph of userplane, A and B represent the two nodes of each link
@@ -88,7 +88,7 @@ configuration:
     enable: true # true or false
     expireTime: 16s # default is 6 seconds
     maxRetryTimes: 3 # the max number of retransmission
-  nrfUri: http://127.0.0.10:8000 # a valid URI of NRF
+  nrfUri: http://10.10.0.83:8003 # a valid URI of NRF
   nrfCertPem: cert/nrf.pem # NRF Certificate
   urrPeriod: 10 # default usage report period in seconds
   urrThreshold: 1000 # default usage report threshold in bytes
