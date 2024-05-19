@@ -178,7 +178,7 @@ configuration:
         B: UPF5
       - A: gNB1
         B: UPF6
-  nrfUri: http://10.10.0.83:8003
+  nrfUri: http://10.216.0.50:8003
   ulcl: true
 
   # retransmission timer for pdu session modification command

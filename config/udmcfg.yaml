@@ -11,13 +11,13 @@ configuration:
     - nudm-pp # Nudm_ParameterProvisionDataManagement service
   sbi: # Service-based interface information
     scheme: http # the protocol for sbi (http or https)
-    registerIPv4: 10.10.0.83 # IP used to register to NRF
-    bindingIPv4: 10.10.0.83  # IP used to bind the service
+    registerIPv4: 10.216.0.50 # IP used to register to NRF
+    bindingIPv4: 10.216.0.50  # IP used to bind the service
     port: 8007 # Port used to bind the service
     tls: # the local path of TLS key
       pem: cert/udm.pem # UDM TLS Certificate
       key: cert/udm.key # UDM TLS Private key
-  nrfUri: http://10.10.0.83:8003 # a valid URI of NRF
+  nrfUri: http://10.216.0.50:8003 # a valid URI of NRF
   nrfCertPem: cert/nrf.pem # NRF Certificate
 
   # test data set from TS33501-f60 Annex C.4

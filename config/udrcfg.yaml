@@ -5,8 +5,8 @@ info:
 configuration:
   sbi: # Service-based interface information
     scheme: http # the protocol for sbi (http or https)
-    registerIPv4: 10.10.0.83 # IP used to register to NRF
-    bindingIPv4: 10.10.0.83  # IP used to bind the service
+    registerIPv4: 10.216.0.50 # IP used to register to NRF
+    bindingIPv4: 10.216.0.50  # IP used to bind the service
     port: 8008 # port used to bind the service
     tls: # the local path of TLS key
       pem: cert/udr.pem # UDR TLS Certificate
@@ -14,7 +14,7 @@ configuration:
   mongodb:
     name: free5gc # Database name in MongoDB
     url: mongodb://localhost:27017 # URL of MongoDB
-  nrfUri: http://10.10.0.83:8003 # a valid URI of NRF
+  nrfUri: http://10.216.0.50:8003 # a valid URI of NRF
   nrfCertPem: cert/nrf.pem # NRF Certificate
 
 logger: # log output setting

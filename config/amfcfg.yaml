@@ -5,12 +5,12 @@ info:
 configuration:
   amfName: AMF1 # the name of this AMF
   ngapIpList:  # the IP list of N2 interfaces on this AMF
-    - 10.10.0.83
+    - 10.216.0.50
   ngapPort: 38412 # the SCTP port listened by NGAP
   sbi: # Service-based interface information
     scheme: http # the protocol for sbi (http or https)
-    registerIPv4: 10.10.0.83 # IP used to register to NRF
-    bindingIPv4: 10.10.0.83  # IP used to bind the service
+    registerIPv4: 10.216.0.50 # IP used to register to NRF
+    bindingIPv4: 10.216.0.50  # IP used to bind the service
     port: 8000 # port used to bind the service
     tls: # the local path of TLS key
       pem: cert/amf.pem # AMF TLS Certificate
@@ -44,7 +44,7 @@ configuration:
           sd: 112233 # Slice Differentiator (3 bytes hex string, range: 000000~FFFFFF)
   supportDnnList:  # the DNN (Data Network Name) list supported by this AMF
     - internet
-  nrfUri: http://10.10.0.83:8003 # a valid URI of NRF
+  nrfUri: http://10.216.0.50:8003 # a valid URI of NRF
   nrfCertPem: cert/nrf.pem # NRF Certificate
   security:  # NAS security parameters
     integrityOrder: # the priority of integrity algorithms

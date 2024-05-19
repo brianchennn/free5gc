@@ -43,7 +43,7 @@ configuration:
           sd: 112233 # Slice Differentiator (3 bytes hex string, range: 000000~FFFFFF)
   supportDnnList:  # the DNN (Data Network Name) list supported by this AMF
     - internet
-  nrfUri: http://10.10.0.83:8003 # a valid URI of NRF
+  nrfUri: http://10.216.0.50:8003 # a valid URI of NRF
   nrfCertPem: cert/nrf.pem # NRF Certificate
   security:  # NAS security parameters
     integrityOrder: # the priority of integrity algorithms

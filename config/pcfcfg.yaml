@@ -6,15 +6,15 @@ configuration:
   pcfName: PCF # the name of this PCF
   sbi: # Service-based interface information
     scheme: http # the protocol for sbi (http or https)
-    registerIPv4: 10.10.0.83 # IP used to register to NRF
-    bindingIPv4: 10.10.0.83 # IP used to bind the service
+    registerIPv4: 10.216.0.50 # IP used to register to NRF
+    bindingIPv4: 10.216.0.50 # IP used to bind the service
     port: 8005              # port used to bind the service
     tls: # the local path of TLS key
       pem: cert/pcf.pem # PCF TLS Certificate
       key: cert/pcf.key # PCF TLS Private key
   timeFormat: 2019-01-02 15:04:05 # time format of this PCF
   defaultBdtRefId: BdtPolicyId-   # BDT Reference ID, indicating transfer policies of background data transfer.
-  nrfUri: http://10.10.0.83:8003  # a valid URI of NRF
+  nrfUri: http://10.216.0.50:8003  # a valid URI of NRF
   nrfCertPem: cert/nrf.pem # NRF Certificate
   serviceList:   # the SBI services provided by this PCF, refer to TS 29.507
     - serviceName: npcf-am-policy-control # Npcf_AMPolicyControl service
